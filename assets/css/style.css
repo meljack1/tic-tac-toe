@@ -1,0 +1,13 @@
+#gameboard-container {
+    border: solid 2px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 500px;
+    height: 500px;
+}
+
+.field {
+
+    border: solid 2px black;
+}
