@@ -1,7 +1,7 @@
 const gameBoard = (() => {
-    const boardArray = ["", "", "", 
+    const boardArray = ["X", "", "", 
                         "", "", "",
-                        "", "", "",];
+                        "", "", "O",];
 
     // Update board with correct symbol
     const addToBoard = (field) => {
@@ -15,6 +15,7 @@ const gameBoard = (() => {
 const Player = (s) => {
     const sign = s;
     const makeMove = (index) => {
+        console.log(index);
         const field = document.getElementById(index);
         gameBoard.boardArray[index] = sign;
         gameBoard.addToBoard(field);
@@ -24,3 +25,6 @@ const Player = (s) => {
 
 const playerX = Player("X");
 const playerO = Player("O");
+
+const test = document.getElementById("0");
+gameBoard.addToBoard(test);

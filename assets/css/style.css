@@ -8,6 +8,9 @@
 }
 
 .field {
-
+    box-sizing: border-box;
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
     border: solid 2px black;
 }
